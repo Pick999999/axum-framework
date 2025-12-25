@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProTrade - Dashboard</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #1a1a1a; color: #e0e0e0; }
+        header { background-color: #2d2d2d; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #404040; }
+        h1 { margin: 0; font-size: 1.5rem; color: #4caf50; }
+        .container { padding: 2rem; }
+        .card { background-color: #2d2d2d; border-radius: 8px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
+        #chart-placeholder { height: 400px; background: #222; border: 1px dashed #555; display: flex; align-items: center; justify-content: center; color: #777; }
+        .btn-logout { background: #d32f2f; color: white; text-decoration: none; padding: 8px 16px; border-radius: 4px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ProTrade System</h1>
+        <a href="/" class="btn-logout">Logout</a>
+    </header>
+    <div class="container">
+        <div class="card">
+            <h2>Live Market Data</h2>
+            <div id="chart-placeholder">
+                Waiting for WebSocket Connection...
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        console.log("Dashboard Loaded. Ready for Real-time data.");
+    </script>
+</body>
+</html>
