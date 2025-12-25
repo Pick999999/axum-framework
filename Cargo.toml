@@ -1,0 +1,15 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "crates/api",
+    # "crates/auth",   <-- เปิดใช้เมื่อสร้าง folder แล้ว
+    # "crates/trade",  <-- เปิดใช้เมื่อสร้าง folder แล้ว
+    # "crates/common", <-- เปิดใช้เมื่อสร้าง folder แล้ว
+]
+
+# การตั้งค่า Profile เพื่อ Performance สูงสุด (Optional แต่แนะนำ)
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
